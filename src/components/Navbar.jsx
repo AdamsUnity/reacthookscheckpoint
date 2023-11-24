@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="shadow-md p-2 color-grey">
+    <nav className="shadow-md p-2">
       <div className="max-w-4xl mx-auto flex  items-center gap-4 ">
         <img
           src="https://cdn.pixabay.com/photo/2015/12/09/22/24/filmklappe-1085692_640.png"

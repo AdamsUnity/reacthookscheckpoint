@@ -24,7 +24,7 @@ function App() {
     <div>
       <Navbar />
 
-      <div className="max-w-4xl mx-auto flex justify-between pt-8 ">
+      <div className="max-w-4xl mx-auto flex justify-between pt-8 flex-col md:flex-row gap-4 py-8 px-5 items-center">
         {/* filter component */}
         <Filter setMyMovies={setMyMovies} memorizeMovies={memorizeMovies} />
         <CreatNewMovie
@@ -33,6 +33,7 @@ function App() {
           setRandom={setRandom}
         />
       </div>
+      {/* intenary statement to show if movie seached for does not exist  */}
       {myMovies.length === 0 ? (
         <div className="text-center py-24 text-3xl">
           Searched movie did not return any result
